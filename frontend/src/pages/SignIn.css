@@ -1,0 +1,111 @@
+/* src/pages/SignIn.css */
+
+.signin-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #111);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* ✅ Navbar Styling (Same as Homepage) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+/* ✅ SignIn Box */
+.signin-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.signin-container h2 {
+  margin-bottom: 1rem;
+}
+
+.signin-container input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+}
+
+.signin-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #00c853;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.signin-container button:hover {
+  background-color: #00b94f;
+}
+
+.error-message {
+  margin-top: 1rem;
+  color: #ff6b6b;
+  font-weight: bold;
+}
+
+/* ✅ Responsive Fix */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 0.5rem;
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    margin: 0.3rem 0;
+  }
+
+  .signin-container {
+    margin: 60px 20px;
+    padding: 1.5rem;
+  }
+}

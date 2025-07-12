@@ -1,0 +1,128 @@
+/* General Page Styles */
+.signup-page {
+  background: linear-gradient(135deg, #1e1e2f, #111);
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #222;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+/* Signup Box */
+.signup-container {
+  max-width: 400px;
+  margin: 80px auto;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background: #333;
+  color: white;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #1db954;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #17a74a;
+}
+
+/* Message Box */
+.message-box {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #333;
+  font-size: 0.95rem;
+  color: #eee;
+}
+
+/* Link to SignIn */
+.form-switch {
+  margin-top: 15px;
+  font-size: 0.95rem;
+}
+
+.form-switch a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-switch a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 0.5rem;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 0.3rem 0;
+  }
+
+  .signup-container {
+    margin: 50px 20px;
+    padding: 25px;
+  }
+
+  .signup-form input,
+  .signup-form button {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

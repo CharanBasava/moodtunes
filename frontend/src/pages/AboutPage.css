@@ -1,0 +1,95 @@
+.about-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+/* Title */
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Info Card */
+.info-box {
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 255, 0, 0.1);
+  padding: 2rem 2.5rem;
+  margin: 1rem auto 3rem;
+  max-width: 550px;
+  width: 90%;
+  line-height: 1.8rem;
+  font-size: 1.15rem;
+  color: #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-box p {
+  margin: 1rem 0;
+}
+
+.info-box strong {
+  color: #1db954;
+}
+
+.info-box a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.info-box a:hover {
+  color: #34e19d;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  .info-box {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+}
+.info-box svg {
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #1db954;
+}

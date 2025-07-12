@@ -1,0 +1,99 @@
+.main-page {
+  background-color: #121212;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4px 1rem 2rem;
+  background-color: #222;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+.nav-links a {
+  margin-left: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links {
+  margin-right: 4px;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+.main-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.mood-form input {
+  padding: 0.75rem 1.25rem;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  width: 300px;
+  text-align: center;
+}
+
+.mood-form button {
+  margin-left: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  border: none;
+  background: #1db954;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.song-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.song-card {
+  background: #222;
+  border-radius: 12px;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.more-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mood-form input {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .mood-form button {
+    width: 90%;
+  }
+}

@@ -1,0 +1,81 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #111);
+  color: white;
+}
+
+/* Navbar styles remain the same */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #222;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1db954;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #1db954;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #1db954;
+}
+
+/* Content section */
+section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+section p, section ul, section ol {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
+}
+
+/* Footer fix */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #111;
+  font-size: 0.95rem;
+  margin-top: auto; /* Pushes footer to bottom */
+}
+
+.footer a {
+  color: #1db954;
+  text-decoration: none;
+}
